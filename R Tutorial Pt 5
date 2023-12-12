@@ -1,0 +1,51 @@
+-- Booleans / Logical Values in R --
+# When you compare two values in R, the expression is evaluated and R returns the logical answer of TRUE or FALSE.
+10 > 9  # outputs TRUE
+10 == 9  # outputs FALSE
+10 < 9  # outputs FALSE
+
+# You can also compare two variables
+a <- 10
+b <- 9
+
+a > b  # outputs TRUE
+
+# You can also run a condition of an if statement, such as:
+a <- 200
+b <- 33
+
+if (b > a) {
+  print("b is greater than a")
+} else {
+  print("b is not greater than a")
+}                                        # outputs "b is not greater than a"
+
+-- Operators in R --
+
+# Operators are used to perform operations on variables and values
+
+# Arithmetic Operators are used to perform common mathematical operations such as:
++, -, *, /, ^, %%, %/%
+
+# Assignment Operators are used to assign values to variables
+myvar <- 3
+myvar <<- 3
+3 -> myvar
+3 ->> myvar
+
+# And these are used interchangeably
+# <<- is also a global assigner.
+
+# Comparison operators are used to compare two values such as:
+==, !=, >, <, >=, <=
+
+# Logical Operators are used to combine condition statements such as:
+&, &&, |, ||, !
+
+# Miscellaneous Operators are used to manipulate data such as:
+  : # this creates a series of numbers in a sequence such as:
+    x <- 1:10
+  %in% # Finds out if an element belongs to a vector such as:
+    x %in% y
+  %*% # is Matrix duplication such as
+    x <- Matrix1 %*% Matrix2
