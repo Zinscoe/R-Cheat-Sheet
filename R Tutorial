@@ -1,0 +1,52 @@
+-- Comments in R --
+# This is a comment in R
+
+# This is a
+# multi line comment in R 
+
+-- Syntax in R --
+# This outputs text in R
+"Hello World!"
+
+# You can use single or double quotes in R
+'Hello World!'
+
+# To output numbers in R, just type the number without quotes
+5
+6
+7
+
+-- Calculations in R --
+# To do calculations, just calculate the numbers together
+5 + 5
+5 - 5
+
+-- Another output option for R --
+# R has a print() function that's available to use if you're used to Python that also uses a print() function to output code
+print("Hello World!")    # This prints Hello World! to the console
+
+for (x in 1:10) {     # This will print out
+  print(x)            # 1 - 10 due to the for loop
+}
+
+-- Variables in R --
+# Variables are containers for storing data values
+
+# Variables are created the moment you assign a value to it
+# And to assign a variable you use the '<-' sign
+# Such as
+myName <- 'Zach'
+age <- 32
+
+# And to call the variable or output the variable you can do these two things
+myName
+# or
+print(myName)
+
+# In which both will print 'Zach'
+
+-- KEEP IN MIND WITH PRINT() FUNCTION --
+# There are times you have to use the print() function to output code, like when using for loops such as
+for (x in 1:10) {
+  print(x)
+}
