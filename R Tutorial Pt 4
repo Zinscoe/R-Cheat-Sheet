@@ -1,0 +1,63 @@
+-- Strings in R --
+# Strings are used for storing text
+# Strings are also surrounded by either single quotation marks, or double quotation marks such as:
+'string'
+"string"
+
+# Assigning a string to a variable is done with the '<-' operator after the variable and the string to follow
+str <- "Hello"
+str1 <- 'Hello'
+
+str # prints "Hello"
+str1 # prints 'Hello'
+
+# You can also assign a multiline string to a variable like this:
+str <- "This string is,
+so very long,
+that I have to add commas,
+to make it a multiline string."
+
+str # prints the value of the str variable above
+
+# If you want the line breaks to be inserted at the same position as in the value of the variable, use the cat() function:
+cat(str)
+
+# There are many string functions in R. Such as the following.
+
+# To find the number of characters in a string, use the nchar() function:
+str <- "Hello World!"
+
+nchar(str) # outputs 12
+
+# Check if a character or a sequence of  of characters are present in a string with the grepl() function:
+str <- "Hello World!"
+
+grepl("H", str)  # outputs TRUE
+grepl("Hello", str)  # outputs TRUE
+grepl("X", str)  # outputs FALSE
+
+# Using the paste() function we can merge/concatenate two strings:
+str <- "Hello"
+str1 <- "World"
+
+paste(str, str1)  # outputs "Hello World"
+
+-- Escape Characters in R --
+# To insert characters that are illegal in strings, you must use an escape character.
+# An escape character is a backslash '\' followed by the character you want to insert.
+
+str <- "We are the so-called "Vikings", from the north."
+
+str  # this will output an error due to an unexpected symbol in "str <- "We are the so-called "Vikings"
+# In order to fix this issue above, we have to add an escape character '\' in front of the double quotes for Vikings such as:
+str <- "We are the so-called \"Vikings\", from the north."
+
+str  # this will output the value of the str variable, including the escape characters
+cat(str)   # this will output the value of the str variable without the escape characters
+
+# Other escape characters in R:
+\\ -- Result
+\n -- New Line
+\r -- Carriage Return
+\t -- Ttab
+\b -- Backspace
