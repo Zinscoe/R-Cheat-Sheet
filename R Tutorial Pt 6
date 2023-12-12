@@ -1,0 +1,69 @@
+-- If...Else Statements in R --
+# R supports the usual logical operators from mathematics such as:
+==, !=, >, >=, <, <=
+
+# The if statement is written with the 'if' keyword, and it is used to specify a block of code to be executed
+# if a condition is TRUE such as:
+a <- 33
+b <- 200
+
+if (b > a) {
+  print("b is greater than a")
+}                                  # outputs 'b is greater than a'
+
+# The Else if keyword is a way of saying "if the previous conditions weren't true, try this condition" such as:
+a <- 33
+b <- 33
+
+if (b > a) {
+  print("b is greater than a")
+} else if (a == b) {
+  print("a and b are equal")
+}                                # this outputs "a and b are equal"
+
+# The Else keyword catches anything which isn't caught by the conditions before it such as:
+a <- 200
+b <- 33
+
+if (b > a) {
+  print("b is greater than a")
+} else if (a == b) {
+  print("a and b are equal")
+} else {
+  print("a is greater than b")
+}                                # this outputs 'a is greater than b'
+
+-- Nested If Statements in R --
+
+# You can have if statements inside if statements called nested if statements as well such as:
+x <- 41
+
+if (x > 10) {
+  print("Above ten")
+  if (x > 20) {
+    print("and also above 20!")
+  } else {
+    print("but not above 20.")
+  }
+  else {
+    print("below 10.")
+}                            # which this will ouput 'Above ten and also above 20!'
+
+  -- AND OR Operators in R --
+  # The &(AND) symbol is a logical operator and is used to combine conditional statements such as:
+  a <- 200
+  b <- 33
+  c <- 500
+
+  if (a > b & c > a) {
+    print("Both conditions are true")
+  }
+
+  # The |(OR) symbol is a logical operator and is used to combine conditional statements such as:
+  a <- 200
+  b <- 33
+  c <- 500
+
+  if (a > b | a > c) {
+    print("At least one of the conditions is true")
+  }
