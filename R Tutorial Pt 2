@@ -1,0 +1,77 @@
+-- Concatenating Elements in R --
+# In order to join two or more elements in R you have to use the paste() function.
+# To combine both text and a variable, R uses a comma (,) such as the following example:
+text <- "awesome"
+paste("R is", text)
+
+# In which this will output 'R is awesome'
+
+# You can also use the comma(,) to add a variable to another variable such as:
+text1 <- "R is"
+text2 <- "awesome"
+paste(text1, text2)
+
+# Which will output the following
+"R is awesome"
+
+# For numbers, the + sign works as a mathematical operator like the following:
+num1 <- 5
+num2 <- 5
+
+num1 + num2
+
+# Which will output the following
+10
+
+# Unfortunately if you try to combine a string(text) and a number, R will give an error such as
+num <- 5
+text <-"Some text"
+
+num + text
+(Error in num + text : non-numeric argument to binary operator)
+
+-- Multiple Variables in R --
+# R allows Users to assign the same value to multiple variables with one line such as:
+var1 <- var2 <- var3 <- "Orange"
+
+# Print variable values
+var1  # Outputs "Orange"
+var2  # Outputs "Orange"
+var3  # Outputs "Orange"
+
+-- Variable Name Rules --
+# Variables can have short names (like 'x' and 'y') or a more descriptive name like 'age' and 'carname') Rules for R variables are as follows:
+# - Variable names must start with a letter and be ce combination of letters, digits, and a period(.)
+# - Variable names cannot start with a number or underscore (_)
+# - Variable names are case sensitive( age, AGE, Age are all three different variable names)
+# - Reserverd words cannot be used like (TRUE, FALSE, NULL, IF,...)
+
+-- Basic Data Types in R --
+# R has many data types such as the following:
+# - numeric (10.5, 55, 787)
+# - integer (1L, 55L, 100L, the 'L' declares this value as an integer)
+# - complex (9 + 3i, the 'i' is the imaginary part)
+# - character (a.k.a string, such as "k", "R is exciting", "FALSE", "11.5")
+# - logical (a.k.a boolean, such as RUE or FALSE)
+
+# Can also use the class() function to check the data type of a variable such as the following examples:
+
+# numeric
+x <- 10.5
+class(x)  # outputs numeric
+
+# integer
+x <- 1000L
+class(x)  # outputs integer
+
+# complex
+x <- 9i + 3
+class(x)  # outputs complex
+
+# character/string
+x <- "R is exciting"
+class(x)  # outputs character
+
+# logical/boolean
+x <- TRUE
+class(x)  # outputs logical
