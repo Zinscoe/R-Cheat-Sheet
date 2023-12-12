@@ -1,0 +1,70 @@
+-- Numbers in R --
+# There are three number types in R:
+# - numeric
+# - integer
+# - complex
+
+x <- 10.5 # numeric
+y <- 10L # integer
+z <- 1i # complex
+
+# Numeric data types are the most common in R, and it contans any number with out without a decimal.
+x <- 5.5
+y <- 1010110101
+z <- 3.14
+
+# Integers are numeric data without decimals. Integers are used when you are certain that you will never
+# create a variable that should contain decimals. And to create an integer variable, we must use the "L"
+# after the integer variable
+x <- 10L
+y <- 14L
+z <- 105054L
+
+# Complex numbers are written with an "i" as the imaginary part:
+x <- 3i + 5
+y <- 5i
+
+-- Data Type Conversions in R --
+# You can convert data types from one to another with these functions:
+# - as.numeric()
+# - as.integer()
+# - as.complex()
+
+# Examples of Type Conversions
+x <- 1L # assign a variable with an integer
+y <- 2 # assign a variable as a numeric
+
+# convert integer to numeric
+a <- as.numeric(x)
+
+# convert numeric to integer
+b <- as.integer(y)
+
+# then we print the values of x and y
+x  # prints 1
+y  # prints 2
+
+# print the class names of a and b
+class(a)  # prints 'numeric'
+class(b) # prints 'integer'
+
+-- Math in R --
+# In R, you can use operators to perform common mathematical operations on numbers, such as '5 + 5' or '5 - 5'
+
+# R also has many built-in math functions that allows User to perform mathematical tasks with numbers.
+
+# min() finds the lowest number in a set
+min(5, 10, 12, 24) # outputs 5
+
+# max() finds the highest number in a set
+max(5, 10, 25, 13) # outputs 25
+
+# sqrt() function returns the square root of a number
+sqrt(16) # outputs 4
+
+# abs() function returns the absolute (positive) value of a number
+abs(-4.7) #outputs 4.7
+
+# ceiling() function rounds a number upwards to its nearest integer, and floor() function rounds downward to its nearest integer
+ceiling(1.4) # outputs 2
+floor(1.4) # outputs 1
